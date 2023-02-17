@@ -541,6 +541,8 @@ nav {
 }
 .table tr td {
   font-size: 22px;
+  text-align: center;
+  vertical-align: middle;
 }
 .table tr td a {
   color: white;
@@ -552,6 +554,7 @@ nav {
   height: 20px;
   width: 20px;
   text-align: center;
+  vertical-align: middle;
 }
 table tr td:first-child {
   width: 100px;
@@ -844,12 +847,209 @@ footer {
 }
 
 /* ---------------------------responsive----------------------------- */
+
 @media (max-width: 800px) {
   * {
     overflow-x: hidden;
   }
   nav .logo{
     width: 40%;
+  }
+  .menu ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+  .banner .text {
+    width: 100%;
+    text-align: center;
+  }
+  .banner .img {
+    width: 100%;
+    justify-content: center;
+  }
+  .banner .text h1 {
+    font-size: 30px;
+  }
+  .banner .text button {
+    margin: 20px 0;
+  }
+
+  .f_text h2 {
+    font-size: 40px;
+  }
+  .f_text p {
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+  }
+  .f_content {
+    flex-wrap: wrap;
+  }
+  .f_content .box {
+    width: 100%;
+    background-color: #082c4e;
+    margin: 20px 0;
+  }
+  .more_feature .m_features {
+    flex-direction: column;
+  }
+  .more_feature .m_features .text {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    line-height: normal;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .round-box1 {
+    margin: 20px auto !important;
+  }
+  .round-box2 {
+    margin: 20px auto !important;
+  }
+  .round-box3 {
+    margin: 20px auto !important;
+  }
+  .round-box1::before {
+    height: 220px !important;
+    width: 220px !important;
+  }
+  .round-box2::before {
+    height: 220px !important;
+    width: 220px !important;
+  }
+  .round-box3::before {
+    height: 220px !important;
+    width: 220px !important;
+  }
+  .our_team {
+    background: #fafafa;
+  }
+  .our_team .team_content {
+    width: 300px;
+    height: 300px;
+    background-color: #d8d8d8;
+    padding: 70px 20px 60px;
+  }
+  .our_team .team_content h3 {
+    font-size: 25px;
+  }
+  .our_team .team_content p {
+    font-size: 18px;
+  }
+  .our_team .team_content button {
+    margin: 0 auto;
+  }
+  .explore h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .explore a {
+    font-size: 30px;
+    margin: 0 auto;
+    left: 30%;
+  }
+  .table h3 {
+    font-size: 30px;
+  }
+  .table p {
+    font-size: 18px;
+  }
+  .table table tr {
+    flex-direction: column;
+    line-height: 35px;
+  }
+  .help_team .team-info h3 {
+    font-size: 30px;
+  }
+  .help_team .team-info p {
+    font-size: 18px;
+  }
+  .logo-img img {
+    width: 50%;
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+  }
+  .features3-images .f3-i1 {
+    width: 100%;
+  }
+  .features3-images .f3-i2 {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .client-info {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .clien-t {
+    margin: 20px auto;
+    overflow-y: hidden;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contact h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+  }
+  .footer{
+    padding: 50px 0;
+  }
+  .footer_content{
+    flex-wrap: wrap;
+  }
+.footer_content .paragraph {
+  max-width: 100%;
+}
+.footer_content .list1 {
+  max-width: 33%;
+  margin: 20px 0;
+}
+.footer_content .list2 {
+  max-width: 33%;
+  margin: 20px 0;
+}
+.footer_content .list3 {
+  max-width: 33%;
+  margin: 20px 0;
+}
+.copyright {
+  flex-wrap: wrap;
+}
+.copyright p{
+  width: 100%;
+  padding: 30px 30px;
+  margin: 0 auto;
+}
+.copyright .form{
+  width: 100%;
+  padding: 30px 30px;
+  margin: 0 auto;
+}
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) {
+  * {
+    overflow-x: hidden;
   }
   .menu ul li {
     display: block;
